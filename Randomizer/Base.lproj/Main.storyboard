@@ -16,41 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Yv-jOB">
-                                <rect key="frame" x="94" y="386" width="203" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Yv-jOB">
+                                <rect key="frame" x="180.33333333333334" y="386.33333333333331" width="29.666666666666657" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-Kb-9Bu">
-                                <rect key="frame" x="225" y="200" width="101" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyA-7B-BFt">
-                                <rect key="frame" x="158" y="656" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.60146962410000004" green="0.75059768360000001" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="nnJ-4I-fre">
+                                <rect key="frame" x="79.666666666666686" y="200" width="231" height="71.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyq-oq-EGu">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.666666666666664" height="71.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-Kb-9Bu">
+                                        <rect key="frame" x="130.66666666666669" y="0.0" width="100.33333333333331" height="71.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO6-SC-V8S">
+                                <rect key="frame" x="157.66666666666666" y="596.66666666666663" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="getRandomNumberButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Heo-5F-KaD"/>
+                                    <action selector="getRandomNumberButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0D-Af-aGQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyq-oq-EGu">
-                                <rect key="frame" x="94" y="200" width="37" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nnJ-4I-fre" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Cf-mE-diw"/>
+                            <constraint firstItem="6R3-Yv-jOB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0tf-6x-8z2"/>
+                            <constraint firstItem="nnJ-4I-fre" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="Rw8-Nk-F1N"/>
+                            <constraint firstItem="rO6-SC-V8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMb-5T-3ea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rO6-SC-V8S" secondAttribute="bottom" constant="179" id="p2B-ry-yT9"/>
+                            <constraint firstItem="6R3-Yv-jOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdc-CG-iXs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Random Number" id="E2E-BW-As1">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="f1r-Sl-ysm">
@@ -60,7 +67,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="getRundomNumberButton" destination="XyA-7B-BFt" id="3xD-kp-ww6"/>
                         <outlet property="maximumValueLabel" destination="zO8-Kb-9Bu" id="wXm-cO-Aq9"/>
                         <outlet property="minimumValueLabel" destination="Vyq-oq-EGu" id="lWi-1y-za7"/>
                         <outlet property="randomValueLabel" destination="6R3-Yv-jOB" id="nUh-AW-LvG"/>
@@ -70,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="1064.6153846153845" y="4.9763033175355451"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="5TP-nw-s6A">
             <objects>
-                <viewController id="itz-Ua-TXJ" sceneMemberID="viewController">
+                <viewController id="itz-Ua-TXJ" customClass="SettingsViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0n3-mz-IUa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,6 +112,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="itz-Ua-TXJ" eventType="touchUpInside" id="AKl-C0-bI4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -121,6 +130,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BZR-8O-l0K"/>
+                    <connections>
+                        <outlet property="maximumValueTextField" destination="zgW-GZ-ARL" id="3Yi-vp-ajL"/>
+                        <outlet property="minimumValueTextField" destination="ef4-eG-9vl" id="2Ax-NU-wbJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bz-Xk-T8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
