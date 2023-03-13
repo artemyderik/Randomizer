@@ -34,6 +34,8 @@ class ViewController: UIViewController {
             randomValueLabel.text = Int.random(
                 in: minimumNumber...maximumNumber
             ).formatted()
+        } else {
+            showAlert(with: "Yo! Be careful.", and: "Your minimum value is more than your maximum value.")
         }
     }
     
@@ -44,4 +46,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    private func showAlert(with title: String!,and massage: String!) {
+        let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
+        present(alert, animated: true)
+    }
+}
 
