@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         maximumValueTextField.text = maximumValueAgent
         minimumValueTextField.text = minimumValueAgent
+
     }
     
     
