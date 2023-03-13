@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet var maximumValueTextField: UITextField!
     @IBOutlet var minimumValueTextField: UITextField!
     
+    
     var maximumValueAgent: String!
     var minimumValueAgent: String!
     
@@ -19,7 +20,6 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         maximumValueTextField.text = maximumValueAgent
         minimumValueTextField.text = minimumValueAgent
-
     }
     
     
@@ -28,3 +28,7 @@ class SettingsViewController: UIViewController {
     }
 }
 
+// MARK: UIAlertController
+extension ViewController {
+    
+}
