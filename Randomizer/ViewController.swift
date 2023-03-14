@@ -49,6 +49,11 @@ class ViewController: UIViewController {
 extension ViewController {
     private func showAlert(with title: String!,and massage: String!) {
         let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.minimumValueLabel.text = ""
+            self.maximumValueLabel.text = ""
+        }
+        alert.addAction(okAction)
         present(alert, animated: true)
     }
 }
